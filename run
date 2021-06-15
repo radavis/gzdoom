@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+gzdoom \
+  -config ./gzdoom-portable.ini \
+  -file ./idkfa-soundtrack/IDKFAv2.wad \
+    ./beautiful-doom/Beautiful_Doom_716.pk3 \
+    ./wads/D2RELOAD.WAD
+
+
+#  ./brutal-community/brutalv21.10.1.pk3
+#  ./wads/av.zip
+#  ./smooth-doom/SmoothDoom.pk3
+
