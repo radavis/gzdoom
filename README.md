@@ -33,3 +33,14 @@ $ ./run
 * trevor0402-sc-55-soundfont: https://github.com/trevor0402/SC55Soundfont/releases
 * patch93-sc-55-soundfont: https://musical-artifacts.com/artifacts/1228
 * hd-textures: https://www.youtube.com/watch?v=Zx6EoeKxMV0
+
+## fix fluidsynth
+
+```bash
+$ ./run
+fluidsynth: warning: SDL2 not initialized, SDL2 audio driver won't be usable
+$ sudo apt purge fluidsynth libfluidsynth-dev
+$ curl -OL http://debian.drdteam.org/pool/multiverse/d/drdteam-libfluidsynth1/drdteam-libfluidsynth1_1.1.11_amd64.deb
+$ sudo dpkg -i drdteam-libfluidsynth1_1.1.11_amd64.deb
+```
+
