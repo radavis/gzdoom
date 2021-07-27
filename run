@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 
+# see: https://zdoom.org/wiki/Command_line_parameters
+
 gzdoom \
   -config ./gzdoom-portable.ini \
-  -file ./idkfa-soundtrack/IDKFAv2.wad \
-    ./beautiful-doom/Beautiful_Doom_716.pk3 \
-#    ./wads/av.zip
-#    ./wads/scythex.zip
-#  ./brutal-community/brutalv21.10.1.pk3
-#  ./smooth-doom/SmoothDoom.pk3
+  -file ./doom-sound-bulb/Doom_Sound_Bulb.wad \
+    ./wads/btsx_e1a.wad \
+    ./wads/btsx_e1b.wad \
+  -deh ./wads/btsx_e1.deh \
+  -warp 1
