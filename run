@@ -4,6 +4,7 @@
 
 gzdoom \
   -config ./gzdoom-portable.ini \
+  -iwad ./DOOM2.WAD \
   -file ./doom-sound-bulb/Doom_Sound_Bulb.wad \
     ./wads/btsx_e1a.wad \
     ./wads/btsx_e1b.wad \
