@@ -1,10 +1,28 @@
 # gzdoom
 
+## gzdoom release
+
 ```bash
-$ curl -OL https://github.com/coelckers/gzdoom/releases/download/g4.6.0/gzdoom_4.6.0_amd64.deb
-$ dpkg -i gzdoom_4.6.0_amd64.deb
+$ cd ~/games
+$ mkdir -p gzdoom/releases
+$ cd gzdoom/releases
+$ curl -OL https://zdoom.org/files/gzdoom/bin/gzdoom-legacy_3.8.2_amd64.deb
+$ curl -OL https://github.com/coelckers/gzdoom/releases/download/g4.8.2/gzdoom_4.8.2_amd64.deb
+```
+
+install
+
+```bash
+$ cat Aptfile | xargs sudo apt install -y
+$ dpkg -i releases/gzdoom_4.8.2_amd64.deb
 # set the location for doom wads and addons
 $ export DOOMWADDIR=$HOME/games/gzdoom
+```
+
+uninstall
+
+```bash
+$ sudo apt --purge remove gzdoom gzdoom-legacy
 ```
 
 configuration lives at `~/.config/gzdoom/`
@@ -44,24 +62,3 @@ $ curl -OL http://debian.drdteam.org/pool/multiverse/d/drdteam-libfluidsynth1/dr
 $ sudo dpkg -i drdteam-libfluidsynth1_1.1.11_amd64.deb
 ```
 
-## gzdoom release
-
-```bash
-$ mkdir releases
-$ cd releases
-$ curl -OL https://github.com/coelckers/gzdoom/releases/download/g3.7.2/gzdoom-legacy_3.7.2_amd64.deb
-$ curl -OL https://zdoom.org/files/gzdoom/bin/gzdoom-legacy_3.8.2_amd64.deb
-$ curl -OL https://github.com/coelckers/gzdoom/releases/download/g4.8.2/gzdoom_4.8.2_amd64.deb
-```
-
-install
-
-```bash
-$ dpkg -i releases/gzdoom_4.2.4_amd64.deb
-```
-
-uninstall
-
-```bash
-$ sudo apt --purge remove gzdoom
-```
