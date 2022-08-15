@@ -27,7 +27,8 @@ $ sudo apt --purge remove gzdoom gzdoom-legacy
 
 configuration lives at `~/.config/gzdoom/`
 
-fluidsynth looks for `sf2` sound font files at `/usr/share/sounds/sf2/`. Symlink files within this directory, or set `fluid_patchset=/path/to/sound-font.sf2` in `gzdoom.ini`.
+fluidsynth looks for `sf2` sound font files at `/usr/share/sounds/sf2/`. Symlink files 
+within this directory, or set `fluid_patchset=/path/to/sound-font.sf2` in `gzdoom.ini`.
 
 start it up
 
@@ -57,8 +58,13 @@ $ ./run
 ```bash
 $ ./run
 fluidsynth: warning: SDL2 not initialized, SDL2 audio driver won't be usable
-$ sudo apt purge fluidsynth libfluidsynth-dev
-$ curl -OL http://debian.drdteam.org/pool/multiverse/d/drdteam-libfluidsynth1/drdteam-libfluidsynth1_1.1.11_amd64.deb
-$ sudo dpkg -i drdteam-libfluidsynth1_1.1.11_amd64.deb
+$ sudo apt install fluidsynth libfluidsynth-dev
 ```
 
+## Beautiful-Doom
+
+```bash
+$ mkdir beautiful-doom
+$ cd beautiful-doom
+$ curl -OL https://github.com/jekyllgrim/Beautiful-Doom/releases/download/7.1.6/Beautiful_Doom_716.pk3
+```

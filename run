@@ -5,4 +5,5 @@
 gzdoom \
   -config ./gzdoom-portable.ini \
   -iwad ./iwads/doom_complete.pk3 \
-  -file ./doom-sound-bulb/Doom_Sound_Bulb.wad
+  -file \
+    ./beautiful-doom/Beautiful_Doom_716.pk3
