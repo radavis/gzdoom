@@ -3,3 +3,14 @@
 *wad
 *deb
 *sf2
+
+!audio/.keep
+audio/*
+!gfx/.keep
+gfx/*
+!iwads/.keep
+iwads/*
+!releases/.keep
+releases/*
+!wads/.keep
+wads/*
