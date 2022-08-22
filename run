@@ -6,5 +6,6 @@ gzdoom \
   -config ./gzdoom.ini \
   -iwad ./iwads/DOOM2.WAD \
   -file \
+    ./wads/TNTR.wad \
     ./gfx/beautiful-doom/Beautiful_Doom_716.pk3 \
-    ./wads/wad_name.wad
+  -deh ./wads/TNTR.deh
