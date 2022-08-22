@@ -71,6 +71,7 @@ fluid_patchset=$HOME/games/gzdoom/sfx/SC-55.sf2 # or
 $ cd gfx
 $ curl -OL https://github.com/jekyllgrim/Beautiful-Doom/releases/download/7.1.6/Beautiful_Doom_716.pk3
 # add '-file ./gfx/Beautiful_Doom_716.pk3' to 'run' script
+$ cd ..
 $ ./run
 ```
 
@@ -109,4 +110,4 @@ Combine iwads for official DOOM releases into one `doom_complete.pk3` file.
 
 [[homepage](https://jp.itch.io/wadsmoosh)]
 
-[[source code](https://heptapod.host/jp-lebreton/wadsmoosh#wadsmoosh-simple-iwad-merge-utility#README)]
+[[source code](https://heptapod.host/jp-lebreton/wadsmoosh)]
