@@ -1,6 +1,6 @@
 # gzdoom
 
-## gzdoom release
+## gzdoom releases
 
 ```bash
 $ cd ~/games
@@ -13,9 +13,8 @@ $ curl -OL https://github.com/coelckers/gzdoom/releases/download/g4.8.2/gzdoom_4
 install
 
 ```bash
-$ cat Aptfile | xargs sudo apt install -y
 $ dpkg -i releases/gzdoom_4.8.2_amd64.deb
-# set the location for doom wads and addons
+# set the location for doom iwads, addons
 $ export DOOMWADDIR=$HOME/games/gzdoom
 ```
 
@@ -27,9 +26,6 @@ $ sudo apt --purge remove gzdoom gzdoom-legacy
 
 configuration lives at `~/.config/gzdoom/`
 
-fluidsynth looks for `sf2` sound font files at `/usr/share/sounds/sf2/`. Symlink files 
-within this directory, or set `fluid_patchset=/path/to/sound-font.sf2` in `gzdoom.ini`.
-
 start it up
 
 ```bash
@@ -38,24 +34,14 @@ $ gzdoom
 $ ./run
 ```
 
-## addons
+## version control configuration
 
-[moddb](https://www.moddb.com/games/doom/mods?sort=visitstotal-desc)
+```bash
+$ cp ~/.config/gzdoom/gzdoom.ini ./gzdoom.ini
+# add '-config ./gzdoom.ini' to 'run' script
+```
 
-* idkfa-soundtrack: https://www.moddb.com/mods/brutal-doom/addons/idkfa-doom-soundtrack
-* hydros-zdoom-overhaul: https://www.moddb.com/games/doom/addons/zdoom-overhaul-pack
-* perkristian-high-res-sfx: https://www.perkristian.net/game_doom-sfx.shtml
-* smooth-doom: https://www.doomworld.com/forum/topic/69451-smooth-doom-update-41420/
-* beautiful-doom: https://github.com/jekyllgrim/Beautiful-Doom#readme
-* hoover1979-ultrahd-textures: https://www.moddb.com/mods/hoover1979-ultrahd-doom-texture-pack/downloads/1k-texture-pack-3rd-demo-24052020-single-file
-* x16-sprite-pack: https://www.moddb.com/mods/x16-sprite-pack-doom/downloads/x16-sprite-pack-vanilla-doom-complete-v08
-* doom-sound-bulb: https://www.doomworld.com/forum/topic/110822-doom-sound-bulb-hd-sounds-that-stay-true-to-the-original/
-* 300-pounds-sound-pack: https://forum.zdoom.org/viewtopic.php?f=46&t=70078
-* trevor0402-sc-55-soundfont: https://github.com/trevor0402/SC55Soundfont/releases
-* patch93-sc-55-soundfont: https://musical-artifacts.com/artifacts/1228
-* hd-textures: https://www.youtube.com/watch?v=Zx6EoeKxMV0
-
-## fix fluidsynth
+## fluidsynth with Roland SC-55 soundfonts
 
 ```bash
 $ ./run
@@ -63,10 +49,57 @@ fluidsynth: warning: SDL2 not initialized, SDL2 audio driver won't be usable
 $ sudo apt install fluidsynth libfluidsynth-dev
 ```
 
+fluidsynth looks for `sf2` sound font files at `/usr/share/sounds/sf2/`. Symlink files 
+within this directory, or set `fluid_patchset=/path/to/sound-font.sf2` in the 
+`gzdoom.ini` file.
+
+```bash
+$ cd sfx
+$ curl -OL https://musical-artifacts.com/artifacts/1228/SC-55.sf2
+$ curl -OL https://github.com/trevor0402/SC55Soundfont/releases/download/v1.2b/SC-55.SoundFont.v1.2b.sf2
+```
+
+```
+# gzdoom.ini
+fluid_patchset=$HOME/games/gzdoom/sfx/SC-55.sf2 # or
+# fluid_patchset=$HOME/games/gzdoom/sfx/SC-55.SoundFont.v1.2b.sf2
+```
+
 ## Beautiful-Doom
+
+[[github](https://github.com/jekyllgrim/Beautiful-Doom)]
 
 ```bash
 $ mkdir beautiful-doom
 $ cd beautiful-doom
 $ curl -OL https://github.com/jekyllgrim/Beautiful-Doom/releases/download/7.1.6/Beautiful_Doom_716.pk3
 ```
+
+## Wads
+
+Search [`best doom wads site:reddit.com`](https://www.google.com/search?q=best+doom+wads+site%3Areddit.com), to find recommendations.
+
+Search [`wad-name site:doomworld.com`](https://www.google.com/search?q=tnt+revilution+site%3Adoomworld.com), to find a download link.
+
+```bash
+$ cd wads
+$ curl -OL https://www.gamers.org/pub/idgames/levels/doom2/megawads/tntr.zip
+$ unzip tntr.zip
+# add '-file ./wads/TNTR.wad -deh ./wads/TNTR.deh' to 'run' script
+$ ./run
+```
+
+## other addons
+
+[moddb](https://www.moddb.com/games/doom/mods?sort=visitstotal-desc)
+
+* idkfa-soundtrack: https://www.moddb.com/mods/brutal-doom/addons/idkfa-doom-soundtrack
+* hydros-zdoom-overhaul: https://www.moddb.com/games/doom/addons/zdoom-overhaul-pack
+* perkristian-high-res-sfx: https://www.perkristian.net/game_doom-sfx.shtml
+* hoover1979-ultrahd-textures: https://www.moddb.com/mods/hoover1979-ultrahd-doom-texture-pack/downloads/1k-texture-pack-3rd-demo-24052020-single-file
+* x16-sprite-pack: https://www.moddb.com/mods/x16-sprite-pack-doom/downloads/x16-sprite-pack-vanilla-doom-complete-v08
+* doom-sound-bulb: https://www.doomworld.com/forum/topic/110822-doom-sound-bulb-hd-sounds-that-stay-true-to-the-original/
+* 300-pounds-sound-pack: https://forum.zdoom.org/viewtopic.php?f=46&t=70078
+* trevor0402-sc-55-soundfont: https://github.com/trevor0402/SC55Soundfont/releases
+* patch93-sc-55-soundfont: https://musical-artifacts.com/artifacts/1228
+* hd-textures: https://www.youtube.com/watch?v=Zx6EoeKxMV0
