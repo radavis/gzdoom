@@ -85,6 +85,7 @@ $ cd wads
 $ curl -OL https://www.gamers.org/pub/idgames/levels/doom2/megawads/tntr.zip
 $ unzip tntr.zip
 # add '-file ./wads/TNTR.wad -deh ./wads/TNTR.deh' to 'run' script
+$ cd ..
 $ ./run
 ```
 
@@ -101,3 +102,11 @@ $ ./run
 * trevor0402-sc-55-soundfont: https://github.com/trevor0402/SC55Soundfont/releases
 * patch93-sc-55-soundfont: https://musical-artifacts.com/artifacts/1228
 * hd-textures: https://www.youtube.com/watch?v=Zx6EoeKxMV0
+
+## WadSmoosh
+
+Combine iwads for official DOOM releases into one `doom_complete.pk3` file.
+
+[[homepage](https://jp.itch.io/wadsmoosh)]
+
+[[source code](https://heptapod.host/jp-lebreton/wadsmoosh#wadsmoosh-simple-iwad-merge-utility#README)]
