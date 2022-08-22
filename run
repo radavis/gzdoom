@@ -4,6 +4,7 @@
 
 gzdoom \
   -config ./gzdoom-portable.ini \
-  -iwad ./iwads/doom_complete.pk3 \
+  -iwad ./iwads/DOOM2.WAD \
   -file \
-    ./beautiful-doom/Beautiful_Doom_716.pk3
+    ./wads/jenesis.wad \
+    ./gfx/beautiful-doom/Beautiful_Doom_716.pk3 \

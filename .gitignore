@@ -12,5 +12,7 @@ gfx/*
 iwads/*
 !releases/.keep
 releases/*
+!sfx/.keep
+sfx/*
 !wads/.keep
 wads/*
