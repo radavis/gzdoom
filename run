@@ -7,3 +7,4 @@ gzdoom \
   -iwad ./iwads/DOOM2.WAD \
   -file \
     ./gfx/beautiful-doom/Beautiful_Doom_716.pk3 \
+    ./wads/wad_name.wad
