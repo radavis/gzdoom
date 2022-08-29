@@ -4,7 +4,6 @@
 
 gzdoom \
   -config ./gzdoom.ini \
-  -iwad ./iwads/doom_complete.pk3 \
+  -iwad ./iwads/DOOM2.WAD \
   -file \
-    ./gfx/beautiful-doom/Beautiful_Doom_716.pk3 \
-    ./sfx/idkfa-soundtrack/IDKFAv2.wad \
+    ./wads/IHNI-v1.04.pk3 \
