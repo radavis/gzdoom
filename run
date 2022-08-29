@@ -6,5 +6,5 @@ gzdoom \
   -config ./gzdoom.ini \
   -iwad ./iwads/doom_complete.pk3 \
   -file \
-    ./gfx/beautiful-doom/Beautiful_Doom_716.pk3 \
+    ./wads/brutal-community/brutalv21.12.0.pk3 \
     ./sfx/idkfa-soundtrack/IDKFAv2.wad \
