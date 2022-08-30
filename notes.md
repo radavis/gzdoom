@@ -32,6 +32,22 @@ to uninstall...
 $ sudo apt --purge remove gzdoom gzdoom-legacy
 ```
 
+## libsdl2 error
+
+```bash
+$ sudo dpkg -i releases/gzdoom_4.8.2_amd64.deb
+dpkg: dependency problems prevent configuration of gzdoom:
+gzdoom depends on libsdl2-2.0-0; however:
+Package libsdl2-2.0-0 is not installed.
+$ sudo apt --fix-broken install libsdl2-dev
+```
+
+## no sound
+
+```bash
+$ sudo apt install libopenal-dev
+```
+
 ## version control configuration
 
 ```bash

@@ -10,5 +10,3 @@ gzdoom \
   -file \
     ./wads/infra02.pk3 \
     ./gfx/beautiful-doom/Beautiful_Doom_716.pk3 \
-    # ./gfx/brutal-community/brutalv21.12.0.pk3 \
-    # ./sfx/idkfa-soundtrack/IDKFAv2.wad \
