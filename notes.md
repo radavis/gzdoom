@@ -1,5 +1,11 @@
 # notes
 
+## install dependencies
+
+```bash
+$ cat Aptfile | xargs sudo apt install -y
+```
+
 ## download gzdoom releases
 
 ```bash

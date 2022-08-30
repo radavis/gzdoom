@@ -1,0 +1,5 @@
+fluidsynth
+libfluidsynth-dev
+libgles2-mesa-dev
+libopenal-dev
+libsdl2-dev
