@@ -3,10 +3,12 @@
 # see: https://zdoom.org/wiki/Command_line_parameters
 
 gzdoom \
-  -warp 1 1 \
-  -skill 4 \
+  -skill 3\
+  -warp 1 \
   -config ./gzdoom.ini \
-  -iwad ./iwads/DOOM.WAD \
+  -iwad ./iwads/doom2.wad \
   -file \
+    ./wads/infra02.pk3 \
     ./gfx/beautiful-doom/Beautiful_Doom_716.pk3 \
-    ./sfx/idkfa-soundtrack/IDKFAv2.wad \
+    # ./gfx/brutal-community/brutalv21.12.0.pk3 \
+    # ./sfx/idkfa-soundtrack/IDKFAv2.wad \
