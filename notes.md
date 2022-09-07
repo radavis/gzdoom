@@ -97,6 +97,21 @@ $ cd ..
 $ ./run
 ```
 
+## IDKFA Soundtrack
+
+https://www.moddb.com/mods/brutal-doom/addons/idkfa-doom-soundtrack
+
+```bash
+$ cd sfx
+$ mkdir idkfa-soundtrack
+$ cd idkfa-soundtrack
+$ mv ~/Downloads/IDKFA_Soundtrack_Mod_v2.zip .
+$ unzip IDKFA_Soundtrack_Mod_v2.zip
+# add '-file ./sfx/idkfa-soundtrack/WAD/IDKFAv2.wad' to 'run' script
+$ cd ../..
+$ ./run
+```
+
 ## other addons
 
 * [moddb](https://www.moddb.com/games/doom/mods?sort=visitstotal-desc)

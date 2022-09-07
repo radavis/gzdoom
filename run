@@ -3,10 +3,10 @@
 # see: https://zdoom.org/wiki/Command_line_parameters
 
 gzdoom \
-  -skill 3\
-  -warp 1 \
   -config ./gzdoom.ini \
-  -iwad ./iwads/doom2.wad \
+  -iwad ./iwads/doom_complete.pk3 \
   -file \
-    ./wads/infra02.pk3 \
-    ./gfx/beautiful-doom/Beautiful_Doom_716.pk3 \
+    ./wads/NEIS.wad\
+    ./gfx/Beautiful_Doom_716.pk3 \
+    ./sfx/idkfa-soundtrack/WAD/IDKFAv2.wad \
+  -deh ./wads/NEIS.deh \
