@@ -6,6 +6,8 @@
 
 !audio/.keep
 audio/*
+!demos/.keep
+demos/*
 !gfx/.keep
 gfx/*
 !iwads/.keep
